@@ -252,6 +252,12 @@ body {
 	padding-right: 15px;
 }
 
+.article__photo-verticale {
+	margin-bottom: 15px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .article__content {
 	font-size: 16px;
 	font-weight: 700;
@@ -326,7 +332,7 @@ ul.article__content-list-subheadings {
 }
 
 .italic {
-	background-image: url(../Img/Article/Pink-circle-text.png);
+	background-image: url(../Img/Article/Main/Pink-circle-text.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 15px;
@@ -1019,33 +1025,29 @@ ul.servises__card-list li {
 		width: 49%;
 	}
 
-}
-
-@media only screen and (max-width: 768px) {
 	.content__article {
 		width: 100%;
 		margin-bottom: 8px;
 	}
-}
 
-@media only screen and (max-width: 768px) {
 	.small-block {
 		width: 48%;
 		margin-bottom: 8px;
 	}
-}
 
-@media only screen and (max-width: 768px) {
 	.content__article-img {
 		width: 100%;
 	}
-}
-
-@media only screen and (max-width: 768px) {
 
 	.menu,
 	.header__btn {
 		display: none;
+	}
+
+	.article__photo-verticale {
+		padding-right: 0;
+	
+		justify-content: space-between;
 	}
 }
 
@@ -1077,6 +1079,15 @@ ul.servises__card-list li {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+   .article__photo-small {
+		width: 411px;
+		padding-right: 0;
+	}
+
+	.article__photo-verticale {
+		padding-right: 0;
 	}
 
 	.servises {
