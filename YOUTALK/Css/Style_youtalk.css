@@ -47,7 +47,6 @@ a:active {
 }
 
 /*--------------------------------------------------------------------------------------------------*/
-
 html,
 body {
 	margin: 0;
@@ -66,15 +65,18 @@ body {
 	margin: 0 auto;
 }
 
+.conteiner__logo-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 70%;
+}
+
 .header__inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 20px;
-}
-
-.header__logo {
-	margin-right: 20px;
 }
 
 .menu__list {
@@ -86,10 +88,11 @@ body {
 	letter-spacing: 0.25px;
 	line-height: 114%;
 	white-space: nowrap;
+	margin-left: 20px;
 }
 
 .menu__item:not(:last-child) {
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 .header__btn {
@@ -210,12 +213,22 @@ body {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+   .conteiner__logo-menu {
+      width: 70%;
+   }
+}
 
-	.menu,
-	.header__btn {
+@media only screen and (max-width: 768px) {
+	.menu {
 		display: none;
 	}
+}
+
+@media only screen and (max-width: 1023px) {
+.header__btn {
+display: none;
+   }
 }
 
 @media only screen and (min-width: 769px) {
@@ -226,7 +239,7 @@ body {
 
 /*----------------------------------------------------------------------------------------------------*/
 .background {
-	background-image: url(../Img/Article/Circle-salmon-center.svg), url(../Img/Article/Main/Circle-pink-bottom.svg), url(../Img/Article/Main/Vector1.png);
+	background-image: url(../Img/Article/Main/Circle-pink-center.png), url(../Img/Article/Main/Circle-pink-bottom.png), url(../Img/Article/Main/Vector1.png);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: center right -470px, bottom 190px right -170px, bottom;
 	background-size: auto, auto, 100%;
@@ -260,7 +273,13 @@ body {
 	margin-bottom: 15px;
 	max-width: 100%;
 	max-height: 100%;
-	padding-right: 10px;
+}
+
+.article__photo-small {
+	margin-bottom: 15px;
+	max-width: auto;
+	max-height: 100%;
+	padding-right: 15px;
 }
 
 .article__content {
@@ -309,7 +328,7 @@ ul.article__content-list-subheadings {
 	border-radius: 15px;
 	padding: 20px 20px;
 	font-style: italic;
-	background-image: url(../Img/Article/Main/Кавычки.svg);
+	background-image: url(../Img/Article/Main/Quots.png);
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: 3% 7%;
@@ -390,6 +409,8 @@ ul.article__content-list-subheadings {
 .article__section-decor {
 	display: block;
 	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 .green {
@@ -407,6 +428,7 @@ ul.article__content-list-subheadings {
 
 .servises {
 	width: 24%;
+	margin-top: 30px;
 }
 
 .servises__card {
@@ -439,6 +461,7 @@ ul.article__content-list-subheadings {
 	margin-bottom: 15px;
 	font-size: 20px;
 	font-weight: 700;
+	margin-top: 15px;
 }
 
 .psycologist {
@@ -471,6 +494,10 @@ ul.article__content-list-subheadings {
 	cursor: pointer;
 }
 
+.servises__card-filter-img {
+	height: 19px;
+}
+
 .servises__card-dr-name {
 	font-size: 20px;
 	font-weight: 700;
@@ -487,7 +514,7 @@ ul.article__content-list-subheadings {
 
 .gift-care {
 	height: 292px;
-	background-image: url(../Img/Article/Services/Gift-care.svg);
+	background-image: url(../Img/Article/Services/Gift-care.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -517,7 +544,7 @@ ul.article__content-list-subheadings {
 	padding: 25px;
 	line-height: 25px;
 	border: 1.5px solid #dcdcdc;
-	background-image: url(../Img/Article/Services/Gift-blue.svg), url(../Img/Article/Services/Gift-red.svg);
+	background-image: url(../Img/Article/Services/Gift-vlue.png), url(../Img/Article/Services/Gift-red.png);
 	background-repeat: no-repeat, no-repeat;
 	background-size: auto, auto;
 	background-position: right bottom, right bottom;
@@ -634,6 +661,7 @@ ul.servises__card-list li {
 		display: none;
 	}
 
+
 	@media (max-width: 1024px) {
 		.article__content-list li:nth-child(2) {
 			display: none;
@@ -649,7 +677,7 @@ ul.servises__card-list li {
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 560px) {
 	.block {
 		flex-direction: column;
 	}
@@ -880,41 +908,41 @@ ul.servises__card-list li {
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.content__article-img {
 		width: 100%;
 		margin-bottom: 8px;
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.small-block {
 		width: 100%;
 		margin-bottom: 8px;
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.article__img {
 		width: 100%;
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.content__article-img {
 		width: 100%;
 		margin-bottom: 8px;
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.small-block {
 		width: 100%;
 		margin-bottom: 8px;
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.content__article-img {
 		width: 100%;
 	}
@@ -924,7 +952,10 @@ ul.servises__card-list li {
 
 @media only screen and (max-width: 1024px) {
 	.article {
-		width: 70%;
+		width: 73%;
+	}
+	.article__photo {
+		width: 725px;
 	}
 }
 
@@ -952,7 +983,7 @@ ul.servises__card-list li {
 
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 767px) {
 	.text-vertical {
 		display: flex;
 		flex-direction: row;
@@ -976,7 +1007,7 @@ ul.servises__card-list li {
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.article__title {
 		font-size: 30px;
 		line-height: 40px;
@@ -1124,7 +1155,7 @@ ul.servises__card-list li {
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
 	.footer__copyright-list {
 		display: flex;
 		flex-direction: column;
